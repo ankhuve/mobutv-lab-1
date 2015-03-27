@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC02ynWJzw453uzWjFW0DEW7qNckX_kLr8">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+  </head>
+  <body>
+<div id="map-canvas">
+</div>
+
+<div class="col-md-12 ownControls">
+  <div class="col-md-4">
+    <button class="btn btn-primary" id="rotate" onclick="rotate90()">Rotera</button>
+    <div class="btn-group">
+      <button class="btn btn-primary glyphicon glyphicon-plus" id="zoomIn" onclick="zoom(1)"></button>
+      <button class="btn btn-primary glyphicon glyphicon-minus" id="zoomOut" onclick="zoom(-1)"></button>
+    </div>
+  </div>
+  <div class="col-md-4 btn-group">
+    <button class="btn btn-primary glyphicon glyphicon-arrow-left" id="panLeft" onclick="pan('l')"></button>
+    <button class="btn btn-primary glyphicon glyphicon-arrow-right" id="panRight" onclick="pan('r')"></button>
+    <button class="btn btn-primary glyphicon glyphicon-arrow-up" id="panUp" onclick="pan('u')"></button>
+    <button class="btn btn-primary glyphicon glyphicon-arrow-down" id="panDown" onclick="pan('d')"></button>
+  </div>
+  <div class="col-md-4 btn-group">
+    <button class="btn btn-warning" id="createMovableMarker" onclick="makeMarker(true)">Gör flyttbar marker</button>
+    <button class="btn btn-danger" id="createStaticMarker" onclick="makeMarker(false)">Gör statisk marker</button>
+  </div>
+</div>
+
+
+  </body>
+</html>
