@@ -1,0 +1,15 @@
+html, body, #map-canvas { 
+	height: 100%; margin: 0; padding: 0;
+}
+
+#rotate{
+/*	height: 50px;
+	width: 90px;
+	font-size: 20px;
+	margin-left: 50%;*/
+}
+
+.ownControls{
+	position: relative;
+	bottom: 10%;
+}
