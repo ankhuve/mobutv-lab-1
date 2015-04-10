@@ -67,10 +67,16 @@
       </div>
     </div>
     <div class="col-md-4 col-xs-12 btn-group">
-      <button class="btn btn-warning" id="createMovableMarker" onclick="makeMarker(true)">Gör flyttbar marker</button>
-      <button class="btn btn-danger" id="createStaticMarker" onclick="makeMarker(false)">Gör statisk marker</button>
+      <button class="btn btn-warning col-xs-6" id="createMovableMarker" onclick="makeMarker(true)">Gör flyttbar marker</button>
+      <button class="btn btn-danger col-xs-6" id="createStaticMarker" onclick="makeMarker(false)">Gör statisk marker</button>
     </div>
+
   <!-- </div> -->
+</div>
+<div id="getPositionButton">
+  <img class="topButton" id="gpsButton" src="img/gps.png" onclick="getLocation()">
+  <button id="toMeta" class="topButton btn" onclick="map.setCenter(metaPos)">Till META</button>
+  <button id="toHotorget" class="topButton btn" onclick="map.setCenter(hotorgetPos)">Till Hötorget</button>
 </div>
 
 

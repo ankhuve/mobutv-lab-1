@@ -4,14 +4,34 @@ html, body, #map-canvas {
 
 .ownControls{
 	position: relative;
-	bottom: 100px;
+	bottom: 160px;
 	overflow: hidden;
 }
 
+.topButton{
+	position: absolute;
+	top: 0px;
+	margin: 20px;
+}
+
+#toHotorget{
+	top: 50px;
+}
+
+#gpsButton{
+	background-color: rgba(0,0,0,0);
+	border: 0;
+	height: 40px;
+	width: 40px;
+	right: 20px;
+}
+
 @media screen and (max-width: 360px){
-	.ownControls{
-		position: relative;
-		bottom: 160px;
+	#createMovableMarker{
+		font-size: 12px;
+	}
+	#createStaticMarker{
+		font-size: 12px;
 	}
 
 	.btn-group{
